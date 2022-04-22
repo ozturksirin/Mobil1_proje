@@ -5,12 +5,14 @@
     android:background="@color/backColor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash_screen" >
+    tools:context=".Splash_screen">
+
 
     <Button
         android:id="@+id/btn_atla"
         android:layout_width="132dp"
         android:layout_height="62dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="80dp"
         android:backgroundTint="@color/buttons_color"
@@ -18,7 +20,8 @@
         android:textColor="@color/cardview_dark_background"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgi" />
 
     <ImageView
         android:id="@+id/logo"
@@ -26,8 +29,10 @@
         android:layout_height="250dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="76dp"
-        android:contentDescription="@string/girislogo"
+        android:layout_marginBottom="52dp"
+        android:contentDescription="girisLogo"
         android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/bilgi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,4 +47,5 @@
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

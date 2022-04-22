@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">ustamYanimda</string>
     <string name="girislogo">girisLogo</string>
+    <string name="btn_cikis">çıkış</string>
+    <string name="otomotiv">OTOMOTİV:</string>
+    <string name="ustalari_goster">Yakındaki ustaları göster:</string>
+    <string name="usta_uye_kayit">Usta olarak üye ol.</string>
 </resources>

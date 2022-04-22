@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Splash_screen extends AppCompatActivity {
+
     private Button button_atla; //button tanımlıyorum.
 
     @Override
@@ -48,5 +49,9 @@ public class Splash_screen extends AppCompatActivity {
         Intent intent=new Intent(this,Screen1.class);
         startActivity(intent);
     }
+
+
+
+
 
 }
