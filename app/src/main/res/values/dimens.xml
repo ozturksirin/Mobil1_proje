@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="myvalue">300dp</dimen>
+    <dimen name="imageview_width">81dp</dimen>
+    <dimen name="imageview_height">65dp</dimen>
+    <dimen name="btn_hemen_ara_width">150dp</dimen>
+    <dimen name="btn_hemen_ara_height">36dp</dimen>
+    <dimen name="btn_haritada_goster_width">196dp</dimen>
+    <dimen name="btn_haritada_goster_height">37dp</dimen>
+    <dimen name="text_usta_width">171dp</dimen>
+    <dimen name="text_usta_height">37dp</dimen>
 
 </resources>

@@ -5,4 +5,10 @@
     <string name="otomotiv">OTOMOTİV:</string>
     <string name="ustalari_goster">Yakındaki ustaları göster:</string>
     <string name="usta_uye_kayit">Usta olarak üye ol.</string>
+    <string name="btn_geri">geri</string>
+    <string name="btn_filtrele">filtrele</string>
+    <string name="usta1">AHMET USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="hmn_ara">hemen ara!</string>
+    <string name="hrt_goster">haritada göster!</string>
+
 </resources>

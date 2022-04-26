@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UstamYanimda">
         <activity
+            android:name=".Screen2"
+            android:exported="false" />
+        <activity
             android:name=".Screen1"
             android:exported="false" />
         <activity
