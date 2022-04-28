@@ -7,8 +7,16 @@
     <string name="usta_uye_kayit">Usta olarak üye ol.</string>
     <string name="btn_geri">geri</string>
     <string name="btn_filtrele">filtrele</string>
-    <string name="usta1">AHMET USTA OTOMOTİV \n ELEKTRİK:</string>
     <string name="hmn_ara">hemen ara!</string>
     <string name="hrt_goster">haritada göster!</string>
+    <string name="usta1">AHMET USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta2">MEHMET USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta3">ARİF USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta4">HALİL USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta5">MURAT USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta6">ERALP USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta7">MUSTAFA USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="usta8">SEZAİ USTA OTOMOTİV \n ELEKTRİK:</string>
+    <string name="title_activity_screen3_map">Screen3_map</string>
 
 </resources>

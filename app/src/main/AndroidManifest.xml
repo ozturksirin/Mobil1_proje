@@ -9,14 +9,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UstamYanimda">
+
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAzEVAoUXujKsMezwFxuwJX-5hWjKfc3BY" />
+
         <activity
-            android:name=".Screen2"
+            android:name=".Screen3_map"
+            android:exported="false"
+            android:label="@string/title_activity_screen3_map" />
+        <activity
+            android:name=".Screen2_ustalar"
             android:exported="false" />
         <activity
-            android:name=".Screen1"
-            android:exported="false" />
-        <activity
-            android:name=".screen1"
+            android:name=".Screen1_menuler"
             android:exported="false" />
         <activity
             android:name=".Splash_screen"

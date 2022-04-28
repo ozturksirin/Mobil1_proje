@@ -27,7 +27,7 @@ public class Splash_screen extends AppCompatActivity {
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
-                    Intent intent = new Intent(Splash_screen.this, Screen1.class);//ekran1'e geçmesini söylüyorum
+                    Intent intent = new Intent(Splash_screen.this, Screen1_menuler.class);//ekran1'e geçmesini söylüyorum
                     startActivity(intent);
                 }
             }
@@ -46,7 +46,7 @@ public class Splash_screen extends AppCompatActivity {
     }
 
     public void openScreen1(){
-        Intent intent=new Intent(this,Screen1.class);
+        Intent intent=new Intent(this, Screen1_menuler.class);
         startActivity(intent);
     }
 
