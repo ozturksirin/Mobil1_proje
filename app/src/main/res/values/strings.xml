@@ -18,5 +18,10 @@
     <string name="usta7">MUSTAFA USTA OTOMOTİV \n ELEKTRİK:</string>
     <string name="usta8">SEZAİ USTA OTOMOTİV \n ELEKTRİK:</string>
     <string name="title_activity_screen3_map">Screen3_map</string>
+    <string name="uyari_kayit">Tüm alanların doldurulması zorunludur!</string>
+    <string name="kisisel_bilgi">Kişisel bilgiler:</string>
+    <string name="kayit_finish">BAŞVURUNUZ ALINMIŞTIR EN GEÇ 23 İŞ GÜNÜ İÇERİSİNDE DÖNÜŞ SAĞLANACAKTIR.</string>
+    <string name="button_cikis">ÇIKIŞ</string>
+    <string name="return_anaEkran">ANA EKRAN</string>
 
 </resources>

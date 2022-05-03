@@ -12,9 +12,9 @@
         android:layout_width="@dimen/imageview_width"
         android:layout_height="@dimen/imageview_height"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_filtre"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/usta" />
 
     <ImageView
@@ -71,36 +71,22 @@
         android:id="@+id/btn_geri"
         android:layout_width="96dp"
         android:layout_height="49dp"
-        android:layout_marginStart="146dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/buttons_color"
         android:text="@string/btn_geri"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_filtre"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_filtre"
-        android:layout_width="148dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="9dp"
-        android:backgroundTint="@color/buttons_color"
-        android:text="@string/btn_filtrele"
-        app:icon="@drawable/ic_baseline_menu_24"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_usta_bilgi"
         android:layout_width="@dimen/text_usta_width"
         android:layout_height="@dimen/text_usta_height"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="92dp"
         android:text="@string/usta1"
         android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta1"
-        app:layout_constraintTop_toBottomOf="@+id/btn_filtre" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_usta_bilgi2"

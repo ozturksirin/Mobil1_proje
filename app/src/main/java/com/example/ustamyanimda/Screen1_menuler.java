@@ -10,6 +10,7 @@ import android.widget.Button;
 
 public class Screen1_menuler extends AppCompatActivity {
     private Button btn_ustaları_goster_go;
+    private Button btn_usta_kayit_go;
 
 
     @Override
@@ -31,6 +32,17 @@ public class Screen1_menuler extends AppCompatActivity {
 
             }
         });
+
+        btn_usta_kayit_go=findViewById(R.id.usta_kayit);
+        btn_usta_kayit_go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent kayit_Intent=new Intent(Screen1_menuler.this,Screen4_kayit.class);
+                startActivity(kayit_Intent);
+            }
+        });
+
+
 
 
     }

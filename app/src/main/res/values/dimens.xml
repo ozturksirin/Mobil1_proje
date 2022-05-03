@@ -9,5 +9,7 @@
     <dimen name="btn_haritada_goster_height">37dp</dimen>
     <dimen name="text_usta_width">171dp</dimen>
     <dimen name="text_usta_height">37dp</dimen>
+    <dimen name="text_kayit_size">20sp</dimen>
+    <dimen name="text_bilgi">16sp</dimen>
 
 </resources>
