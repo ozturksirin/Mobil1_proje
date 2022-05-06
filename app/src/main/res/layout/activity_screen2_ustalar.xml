@@ -85,6 +85,7 @@
         android:layout_marginTop="92dp"
         android:text="@string/usta1"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara1"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,6 +96,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/usta2"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara2"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta2"
         app:layout_constraintTop_toBottomOf="@+id/btn_haritada_goster1" />
 
@@ -105,6 +107,7 @@
         android:layout_marginTop="24dp"
         android:text="@string/usta3"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara4"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta4"
         app:layout_constraintTop_toBottomOf="@+id/btn_haritada_goster4" />
 
@@ -112,9 +115,10 @@
         android:id="@+id/textView_usta_bilgi5"
         android:layout_width="@dimen/text_usta_width"
         android:layout_height="@dimen/text_usta_height"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/usta5"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara5"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta5"
         app:layout_constraintTop_toBottomOf="@+id/btn_haritada_goster3" />
 
@@ -125,6 +129,7 @@
         android:layout_marginTop="28dp"
         android:text="@string/usta6"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara6"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta6"
         app:layout_constraintTop_toBottomOf="@+id/btn_haritada_goster6" />
 
@@ -135,6 +140,7 @@
         android:layout_marginTop="31dp"
         android:text="@string/usta4"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_hemenara3"
         app:layout_constraintStart_toEndOf="@+id/imageview_usta3"
         app:layout_constraintTop_toBottomOf="@+id/btn_haritada_goster2" />
 
