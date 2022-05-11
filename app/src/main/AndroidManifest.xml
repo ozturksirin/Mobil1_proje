@@ -32,7 +32,7 @@
             android:value="@integer/google_play_services_version" /> <!-- Bu, uygulamanın derlendiği Google Play hizmetlerinin sürümünü yerleştirir.-->
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB5fLNitrH0zCSVNahda-e1CsWwqiBT0f4" />
+            android:value="Contants.API_KEY" />
 
 
         <activity

@@ -11,6 +11,12 @@ android {
         viewBinding=true
     }
 
+    buildTypes.each{
+        it.buildConfigField "String","MY_API_KEY",APIKEY
+    }
+
+
+
     defaultConfig {
         applicationId "com.example.ustamyanimda"
         minSdk 24
