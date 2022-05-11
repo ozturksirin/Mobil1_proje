@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ustamyanimda">
 
+    <uses-permission android:name="android.permission. ACCESS_FINE LOCATION"/>
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" /><!-- internet için -->
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UstamYanimda">
-        <activity
-            android:name=".Screen5_kayit_finish"
-            android:exported="false" />
-        <activity
-            android:name=".Screen4_kayit"
-            android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -26,14 +26,25 @@
              project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
+
         <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAzEVAoUXujKsMezwFxuwJX-5hWjKfc3BY" />
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- Bu, uygulamanın derlendiği Google Play hizmetlerinin sürümünü yerleştirir.-->
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB5fLNitrH0zCSVNahda-e1CsWwqiBT0f4" />
+
 
         <activity
             android:name=".Screen3_map"
             android:exported="false"
             android:label="@string/title_activity_screen3_map" />
+        <activity
+            android:name=".Screen5_kayit_finish"
+            android:exported="false" />
+        <activity
+            android:name=".Screen4_kayit"
+            android:exported="false" />
         <activity
             android:name=".Screen2_ustalar"
             android:exported="false" />
