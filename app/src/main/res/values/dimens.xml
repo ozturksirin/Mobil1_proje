@@ -10,7 +10,9 @@
     <dimen name="text_usta_width">171dp</dimen>
     <dimen name="text_usta_height">37dp</dimen>
     <dimen name="text_kayit_size">20sp</dimen>
-    <dimen name="text_bilgi">16sp</dimen>
+    <dimen name="text_bilgi">20sp</dimen>
+    <dimen name="kayit_input_width">226dp</dimen>
+    <dimen name="kayit_input_height">32dp</dimen>
 
 
 </resources>

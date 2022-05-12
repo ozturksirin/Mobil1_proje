@@ -7,192 +7,255 @@
     android:background="@color/backColor"
     tools:context=".Screen4_kayit">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="407dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/uyari_kayit"
-        android:textColor="@color/text_uyari"
-        android:textSize="@dimen/text_kayit_size"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="104dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/kisisel_bilgi"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_bilgi"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="293dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="105dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ad Soyad:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <TextView
+            android:id="@+id/textview_uyari"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/buttons_color"
+            android:text="@string/uyari_kayit"
+            android:textColor="@color/text_uyari"
+            android:textSize="@dimen/text_kayit_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="294dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="195dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="phone"
-        android:text="Numara:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        <TextView
+            android:id="@+id/textView_kisisel_bilgi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="271dp"
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="297dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="196dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+            android:text="@string/kisisel_bilgi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_bilgi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_uyari" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="297dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Ustalık bölümü:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        <EditText
+            android:id="@+id/editTextTextPersonName_ad"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="171dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="133dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="8dp"
-        android:text="Adres bilgileri:"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_bilgi"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+            android:inputType="textPersonName"
+            android:hint="AD:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_kisisel_bilgi" />
 
-    <EditText
-        android:id="@+id/editTextTextPostalAddress"
-        android:layout_width="291dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="107dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="İL:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <EditText
+            android:id="@+id/editTextTextPersonName_soyad"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="171dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="SOYAD:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_ad" />
 
-    <EditText
-        android:id="@+id/editTextTextPostalAddress2"
-        android:layout_width="288dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="110dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="İLÇE:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress" />
+        <EditText
+            android:id="@+id/editTextPhone_telefon"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="171dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="TELEFON NUMARASI:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_soyad" />
 
-    <EditText
-        android:id="@+id/editTextTextPostalAddress3"
-        android:layout_width="285dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="113dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPostalAddress"
-        android:text="Mahalle/sokak:"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress2" />
+        <EditText
+            android:id="@+id/editTextTextEmailAddress_mail"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="171dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="EMAİL:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPhone_telefon" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:text="Notunuz(Zorunlu değil)"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress3" />
+        <TextView
+            android:id="@+id/textView_bilgi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="269dp"
+            android:text="@string/adres_bilgi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_bilgi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress_mail" />
 
-    <EditText
-        android:id="@+id/editTextTextNot"
-        android:layout_width="388dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
-        android:background="@color/white"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        <Spinner
+            android:id="@+id/spinner_il"
+            android:layout_width="142dp"
+            android:layout_height="31dp"
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="120dp"
-        android:layout_marginBottom="17dp"
-        android:backgroundTint="@color/buttons_color"
-        android:text="BİLGİLERİ GÖNDER"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextNot"
-        app:layout_constraintVertical_bias="1.0" />
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/buttons_color"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPostalAddress_il"
+            app:layout_constraintTop_toBottomOf="@+id/textview_uyari" />
 
+        <EditText
+            android:id="@+id/editTextTextPostalAddress_il"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="İL:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_il"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_bilgi2" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress_ilçe"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="17dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="İLÇE:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/spinner_ilçe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress_il" />
+
+        <Spinner
+            android:id="@+id/spinner_ilçe"
+            android:layout_width="142dp"
+            android:layout_height="31dp"
+
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/buttons_color"
+            android:drawSelectorOnTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPostalAddress_ilçe"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_il" />
+
+        <EditText
+            android:id="@+id/editTextTextPostalAddress_mahalle"
+            android:layout_width="@dimen/kayit_input_width"
+            android:layout_height="@dimen/kayit_input_height"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="171dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:hint="MAHALLE/SOKAK:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress_ilçe" />
+
+        <TextView
+            android:id="@+id/textView_notunuz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="141dp"
+            android:text="NOTUNUZ:(ZORUNLU DEĞİL)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_bilgi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress_mahalle" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName_not"
+            android:layout_width="396dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/buttons_color"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="NOT:"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_notunuz" />
+
+        <Button
+            android:id="@+id/button_gonder_kayit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="14dp"
+            android:backgroundTint="@color/buttons_color"
+            android:text="Gönder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_not" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

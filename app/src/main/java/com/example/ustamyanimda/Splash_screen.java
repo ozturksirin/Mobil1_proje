@@ -30,6 +30,8 @@ public class Splash_screen extends AppCompatActivity {
                     Intent intent = new Intent(Splash_screen.this, Screen1_menuler.class);//ekran1'e geçmesini söylüyorum
                     startActivity(intent);
                 }
+
+                finish();
             }
         };
         timerThread.start();
