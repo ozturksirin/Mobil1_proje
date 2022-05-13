@@ -40,13 +40,14 @@
             android:id="@+id/btn_ustaları_göster"
             android:layout_width="403dp"
             android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="29dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="91dp"
+            android:layout_marginEnd="7dp"
             android:backgroundTint="@color/buttons_color"
             android:drawableLeft="@drawable/ic_baseline_location_on_24"
             android:text="@string/ustalari_goster"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView_usta_ara" />
 
@@ -54,33 +55,13 @@
             android:id="@+id/usta_kayit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="116dp"
-            android:layout_marginTop="500dp"
-            android:layout_marginEnd="93dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginEnd="105dp"
             android:backgroundTint="@color/buttons_color"
             android:text="@string/usta_uye_kayit"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_otomotiv" />
-
-        <Button
-            android:id="@+id/button_otomotiv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="5dp"
-            android:backgroundTint="@color/buttons_color"
-            android:drawableLeft="@drawable/ic_baseline_directions_car_24"
-            android:drawableRight="@drawable/ic_baseline_menu_24"
-            android:text="@string/otomotiv"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_ustaları_göster" />
+            tools:layout_editor_absoluteY="650dp" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -91,6 +72,20 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner_bolumler"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/spinner_gri"
+            android:backgroundTint="@color/spinner_gri"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView_usta_ara" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
 
