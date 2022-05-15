@@ -40,9 +40,9 @@
             android:id="@+id/btn_ustaları_göster"
             android:layout_width="403dp"
             android:layout_height="60dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="91dp"
-            android:layout_marginEnd="7dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="4dp"
             android:backgroundTint="@color/buttons_color"
             android:drawableLeft="@drawable/ic_baseline_location_on_24"
             android:text="@string/ustalari_goster"
@@ -56,13 +56,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="104dp"
-            android:layout_marginTop="129dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="105dp"
             android:backgroundTint="@color/buttons_color"
             android:text="@string/usta_uye_kayit"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView_slider" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -76,15 +77,12 @@
 
         <Spinner
             android:id="@+id/spinner_bolumler"
-            android:layout_width="409dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="1dp"
+            android:layout_width="410dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="23dp"
             android:background="@color/spinner_gri"
             android:backgroundTint="@color/spinner_gri"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView_usta_ara" />
 
