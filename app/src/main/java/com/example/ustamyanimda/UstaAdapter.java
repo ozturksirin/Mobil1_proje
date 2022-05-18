@@ -1,6 +1,9 @@
 package com.example.ustamyanimda;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.view.ActionMode;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,6 +20,11 @@ public class UstaAdapter extends RecyclerView.Adapter<UstaAdapter.CarddViewTasar
 
     private Context mContext;
     private List<Ustalar> ustalarList;
+
+
+    private Button btn_konum_goster_go;
+
+
 
     public UstaAdapter(Context mContext, List<Ustalar> ustalarList) {
         this.mContext = mContext;
@@ -41,10 +49,23 @@ public class UstaAdapter extends RecyclerView.Adapter<UstaAdapter.CarddViewTasar
 
         holder.imageView_usta1.setImageResource(R.drawable.usta);
 
+
         holder.button_konum_gstr1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                //button tıklanılma özelliği
+            public void onClick(View v) {              //button tıklanılma özelliği Konum goster
+
+                v.getContext().startActivity(new Intent(v.getContext(), Screen3_map.class));
+
+            }
+        });
+
+        holder.button_hmn_ara1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {    //button arama özelliği
+
+                String phone = "05319334159";
+                Intent call_intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+                v.getContext().startActivity(call_intent);
 
             }
         });

@@ -1,10 +1,18 @@
 package com.example.ustamyanimda;
 
+import android.view.View;
+
 public class Ustalar {
 
     private int usta_id;
     private String usta_bilgi1;
     private String usta_resim_adi;
+
+    public Ustalar(final View v) {
+        super();
+    }
+
+
 
     public Ustalar() {
     }

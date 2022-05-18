@@ -44,6 +44,7 @@ public class Screen2_ustalar extends AppCompatActivity {
 
 
         ustalarArrayList=new ArrayList<>();
+
         ustalarArrayList.add(u1);
         ustalarArrayList.add(u2);
         ustalarArrayList.add(u3);
@@ -56,13 +57,12 @@ public class Screen2_ustalar extends AppCompatActivity {
         ustalarArrayList.add(u10);
 
 
+
+
+
         adapter=new UstaAdapter(this,ustalarArrayList);
 
         rv.setAdapter(adapter);
-
-
-
-
 
 
 

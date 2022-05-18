@@ -23,7 +23,7 @@ public class Splash_screen extends AppCompatActivity {
         Thread timerThread = new Thread(){ //timer kullanarak ekranın 5 saniye sonra diğer ekrana geçmesini söyliyorum
             public void run(){
                 try{
-                    sleep(5000);//5sn olduğunu belirtiyorum
+                    sleep(3000);//3sn olduğunu belirtiyorum
                 }catch(InterruptedException e){
                     e.printStackTrace();
                 }finally{
@@ -36,24 +36,7 @@ public class Splash_screen extends AppCompatActivity {
         };
         timerThread.start();
 
-        button_atla= (Button) findViewById(R.id.btn_atla); //tanımladığım butona tıkladığımzda diğer sayfaya geçmesini söylüyorum
-        button_atla.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openScreen1();
-            }
-        });
-
-
     }
-
-    public void openScreen1(){
-        Intent intent=new Intent(this, Screen1_menuler.class);
-        startActivity(intent);
-    }
-
-
-
 
 
 }
