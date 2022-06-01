@@ -21,6 +21,8 @@ public class Screen1_menuler extends AppCompatActivity {
     private ArrayList<String> bolumler=new ArrayList<>();
     private ArrayAdapter<String> veriAdaptoru;
 
+    private Button btn_iletisim_go;
+
 
 
     @Override
@@ -87,6 +89,20 @@ public class Screen1_menuler extends AppCompatActivity {
 
             }
         });
+
+        btn_iletisim_go = findViewById(R.id.btn_iletisim);
+
+        btn_iletisim_go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent iletisim=new Intent(Screen1_menuler.this, com.example.ustamyanimda.iletisim.class) ;
+
+                startActivity(iletisim);
+            }
+        });
+
+
 
 
     }

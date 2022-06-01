@@ -5,31 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 
-public class Screen5_kayit_finish extends AppCompatActivity {
+public class iletisim extends AppCompatActivity {
 
-    private Button anaEkranGo;
-
+    private Button anaEkranDon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen5_kayit_finish);
+        setContentView(R.layout.activity_iletisim);
 
         getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.actionBar)));
 
-        anaEkranGo=findViewById(R.id.button_anaEkranReturn);
+        anaEkranDon=findViewById(R.id.button_anaEkranDon);
 
-        anaEkranGo.setOnClickListener(new View.OnClickListener() {
+        anaEkranDon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent donus=new Intent(Screen5_kayit_finish.this,Screen1_menuler.class);
-                startActivity(donus);
+                Intent anaekranadonen=new Intent(iletisim.this,Screen1_menuler.class);
+                startActivity(anaekranadonen);
             }
         });
+
 
     }
 }
