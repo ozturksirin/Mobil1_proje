@@ -44,8 +44,11 @@ public class Screen3_map extends FragmentActivity implements OnMapReadyCallback 
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-1500, 400);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng Turkey = new LatLng(40.20, 28.00);
+
+        //mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+
+        mMap.addMarker(new MarkerOptions().position(Turkey).title("Marker in Bandırma"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Turkey));
     }
 }
