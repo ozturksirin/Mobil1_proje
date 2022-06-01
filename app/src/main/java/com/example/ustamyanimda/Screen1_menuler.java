@@ -1,10 +1,14 @@
 package com.example.ustamyanimda;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,6 +26,8 @@ public class Screen1_menuler extends AppCompatActivity {
     private ArrayAdapter<String> veriAdaptoru;
 
     private Button btn_iletisim_go;
+
+    Context context=this;
 
 
 
@@ -102,9 +108,25 @@ public class Screen1_menuler extends AppCompatActivity {
             }
         });
 
-
-
-
     }
 
+    @Override    public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setCancelable(false);
+        builder.setMessage("Çıkış Yapmak istiyor musunuz?");
+        builder.setPositiveButton("EVET", new DialogInterface.OnClickListener() {
+            @Override            public void onClick(DialogInterface dialog, int which) {
+                // Evet'e basılınca yapılacak işlemleri yazınız
+                finish();
+            }
+        });
+        builder.setNegativeButton("HAYIR", new DialogInterface.OnClickListener() {
+            @Override            public void onClick(DialogInterface dialog, int which) {
+                // Hayır'a baslınca yapılacak işmeleri yazınız
+                dialog.cancel();
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 }
