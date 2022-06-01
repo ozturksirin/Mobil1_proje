@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/buttons_color"
+            android:background="@color/white"
             android:text="@string/uyari_kayit"
             android:textColor="@color/text_uyari"
             android:textSize="@dimen/text_kayit_size"
@@ -136,34 +136,20 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName_ustalik_bolum" />
 
-        <Spinner
-            android:id="@+id/spinner_il"
-            android:layout_width="142dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="292dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            android:drawSelectorOnTop="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPostalAddress_il"
-            app:layout_constraintTop_toBottomOf="@+id/textview_uyari" />
-
         <EditText
             android:id="@+id/editTextTextPostalAddress_il"
             android:layout_width="@dimen/kayit_input_width"
             android:layout_height="@dimen/kayit_input_height"
             android:layout_marginStart="14dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="17dp"
+            android:layout_marginEnd="171dp"
             android:background="@color/buttons_color"
             android:ems="10"
-            android:inputType="textPostalAddress"
             android:hint="İL:"
-            android:textColorHint="@color/white"
+            android:inputType="textPostalAddress"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/spinner_il"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_bilgi2" />
 
@@ -173,31 +159,16 @@
             android:layout_height="@dimen/kayit_input_height"
             android:layout_marginStart="14dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="17dp"
+            android:layout_marginEnd="171dp"
             android:background="@color/buttons_color"
             android:ems="10"
-            android:inputType="textPostalAddress"
             android:hint="İLÇE:"
-            android:textColorHint="@color/white"
+            android:inputType="textPostalAddress"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/spinner_ilçe"
+            android:textColorHint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPostalAddress_il" />
-
-        <Spinner
-            android:id="@+id/spinner_ilçe"
-            android:layout_width="142dp"
-            android:layout_height="31dp"
-
-            android:layout_marginStart="17dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="12dp"
-            android:background="@color/white"
-            android:backgroundTint="@color/white"
-            android:drawSelectorOnTop="true"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPostalAddress_ilçe"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_il" />
 
         <EditText
             android:id="@+id/editTextTextPostalAddress_mahalle"
