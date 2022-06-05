@@ -2,6 +2,7 @@ package com.example.ustamyanimda;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,8 +14,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 
@@ -29,6 +32,7 @@ public class Screen1_menuler extends AppCompatActivity {
 
     Context context=this;
 
+    CardView haber1,haber2,haber3;
 
 
     @Override
@@ -107,6 +111,16 @@ public class Screen1_menuler extends AppCompatActivity {
                 startActivity(iletisim);
             }
         });
+
+        ViewFlipper flipper=(ViewFlipper) findViewById(R.id.viewFlipper);
+
+        haber1=(CardView) findViewById(R.id.haber1);
+        haber2=(CardView) findViewById(R.id.haber2);
+        haber3=(CardView) findViewById(R.id.haber3);
+
+        flipper.setAutoStart(true);
+
+
 
     }
 
